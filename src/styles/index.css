@@ -1,3 +1,123 @@
 /* 
     General Styles
 */
+.contact {
+  max-width: 100%;
+  margin: 20px auto; /* Aumentar el espacio alrededor del contacto */
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Cambiar la fuente a una sans-serif */
+  border-radius: 10px; /* Añadir bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+  background-color: #fff; /* Fondo blanco para cada contacto */
+}
+
+/* Contenedor principal */
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Ajustar columnas automáticamente */
+  gap: 20px;
+}
+
+/* Botón de agregar contacto */
+.add-contact-button-container {
+  grid-column: 1;
+  justify-self: end;
+}
+
+/* Lista de contactos */
+.contact-list {
+  grid-column: 1;
+}
+
+/* Imagen de contacto */
+.contact img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; /* Centrar la imagen */
+}
+
+/* Botones de editar y eliminar */
+.contact .edit-button,
+.contact .delete-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  transition: all 0.3s ease; /* Agregar transición suave */
+}
+
+.contact .edit-button:hover,
+.contact .delete-button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Agregar sombra al hacer hover */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #92b9fe,
+    #ffffff
+  ); /* Degradado de azul a blanco */
+}
+
+/* Contenedor principal del formulario */
+.form-body {
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 20px auto; /* Centrado vertical y horizontal */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Degradado de azul a blanco */
+  color: #333; /* Color de texto */
+  background-color: #fff; /* Fondo blanco para cada contacto */
+}
+/* Grupo de entrada */
+.input-group {
+  margin-bottom: 20px; /* Añadir espacio entre grupos de entrada */
+}
+
+.input-group p {
+  margin-bottom: 5px; /* Ajustar el espacio entre los párrafos */
+  font-weight: bold;
+}
+
+/* Estilo de entrada */
+.input-group input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Botón principal */
+.btn-primary {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
