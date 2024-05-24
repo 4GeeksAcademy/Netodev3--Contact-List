@@ -8,7 +8,7 @@ const SingleContact = (props) => {
         <div className="col-md-2">
           <div className="contact-image-container">
             <img
-              src="https://www.inboundcycle.com/hubfs/layout/v3/img/email/gmail-signatures/team-01/svercheval.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Google_Contacts_logo.png"
               className="img"
               alt="..."
             />
